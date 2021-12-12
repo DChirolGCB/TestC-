@@ -12,7 +12,7 @@
 
 int main(int ac, char **av)
 {
-    int ret = david::add(1, 2);
-    std::cout << "1 + 2 = " << ret << std::endl;
+    int ret = david::add(coucou, 8);
+    std::cout << "coucou + 8 = " << ret << std::endl;
     return (0);
 }
