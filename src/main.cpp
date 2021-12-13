@@ -1,18 +1,17 @@
-/**
- * @file main.cpp
- * @author Nicolas IRAGNE (thierry@stadedefrance.fr)
- * @brief This file defines the entry point of the David project.
- * @date 2021-12-12
+/*
+ * Filename: c:\Users\ocdav\source\repos\firstproject\src\main.cpp
+ * Path: c:\Users\ocdav\source\repos\firstproject\src
+ * Created Date: Sunday, December 12th 2021, 4:18:41 pm
+ * Author: David Chirol
  * 
- * @copyright Copyright JambonCorp (c) 2021
+ * Copyright (c) 2021 Beurre
  */
 
-#include "david.h"
+
 #include <iostream>
 
 int main(int ac, char **av)
 {
-    int ret = david::add(coucou, 8);
-    std::cout << "coucou + 8 = " << ret << std::endl;
+    
     return (0);
 }
