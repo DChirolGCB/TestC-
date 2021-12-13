@@ -8,10 +8,16 @@
  */
 
 
+#include <format>
 #include <iostream>
+#include <cstdlib>
 
 int main(int ac, char **av)
 {
-    
+    for (size_t i = 0; i < 10; i++)
+    {
+        std::cout << std::format("j'ai {} couilles", i) << std::endl;
+    }
+
     return (0);
 }

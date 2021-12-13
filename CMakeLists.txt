@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(David)
+
+project(David LANGUAGES CXX)
+
 
 add_executable(David)
-
-option(BUILD_GOGOLE_VERSION "Build gogole version" OFF)
+set_property(TARGET David PROPERTY CXX_STANDARD 20)
 
 find_package(SDL2)
 
@@ -21,14 +22,11 @@ endif()
 
 set(DAVID_SOURCES
     src/main.cpp
-    src/utils.cpp
 )
 
 set(DAVID_HEADERS
     src/core/david.h
 )
 
-target_include_directories(David PRIVATE src/core SDL2-static)
 target_sources(David PRIVATE ${DAVID_SOURCES})
-target_sources(David PRIVATE ${DAVID_HEADERS})
 target_link_libraries(David PRIVATE SDL2-static SDL2main)
